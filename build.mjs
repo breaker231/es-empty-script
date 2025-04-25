@@ -4,7 +4,7 @@ import { denoPlugins } from "jsr:@luca/esbuild-deno-loader";
 await esbuild.build({
   plugins: [...denoPlugins()],
   entryPoints: ["./src/main.ts"],
-  outfile: "./dist/index.js",
+  outfile: "./dist/index.ts",
   bundle: true,
   format: "esm",
 });
